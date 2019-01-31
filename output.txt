@@ -1,0 +1,477 @@
+
+Compiling with gcc -Wall -lm ... 
+Compilation succeeded.
+============================================
+Test for input file: test0.in
+3
+2.3 300 20
+1.7 1000 16
+2.8 500 32
+2.1 750 16
+2.1 500 12
+1.2 600 10
+0.9 900 99 
+ 
+Expected results:                                                                 Your results:
+Stage 1                                                                           Stage 1
+==========                                                                        ==========
+Point 01: <2.30, 300.00, 20.00>                                                   Point 01: <2.30, 300.00, 20.00>
+
+Stage 2                                                                           Stage 2
+==========                                                                        ==========
+Point 01, sum of coordinates (/100):  3.22 |----                                  Point 01, sum of coordinates (/100):  3.22 |----
+Point 02, sum of coordinates (/100): 10.18 |---------+-                           Point 02, sum of coordinates (/100): 10.18 |---------+-
+Point 03, sum of coordinates (/100):  5.35 |------                                Point 03, sum of coordinates (/100):  5.35 |------
+Point 04, sum of coordinates (/100):  7.68 |--------                              Point 04, sum of coordinates (/100):  7.68 |--------
+Point 05, sum of coordinates (/100):  5.14 |------                                Point 05, sum of coordinates (/100):  5.14 |------
+Point 06, sum of coordinates (/100):  6.11 |-------                               Point 06, sum of coordinates (/100):  6.11 |-------
+Point 07, sum of coordinates (/100): 10.00 |---------+                            Point 07, sum of coordinates (/100): 10.00 |---------+
+
+Stage 3                                                                           Stage 3
+==========                                                                        ==========
+Total: 7 points                                                                   Total: 7 points
+Point of largest sum of coordinates: 02                                           Point of largest sum of coordinates: 02
+Largest sum of coordinates: 1017.70                                               Largest sum of coordinates: 1017.70
+
+Stage 4                                                                           Stage 4
+==========                                                                        ==========
+Skyline points:                                                                   Skyline points:
+Point 02: <1.70, 1000.00, 16.00>                                                  Point 02: <1.70, 1000.00, 16.00>
+Point 03: <2.80, 500.00, 32.00>                                                   Point 03: <2.80, 500.00, 32.00>
+Point 04: <2.10, 750.00, 16.00>                                                   Point 04: <2.10, 750.00, 16.00>
+Point 07: <0.90, 900.00, 99.00>                                                   Point 07: <0.90, 900.00, 99.00>
+
+Stage 5                                                                           Stage 5
+==========                                                                        ==========
+Sorted skyline points:                                                            Sorted skyline points:
+Point 03: <2.80, 500.00, 32.00>                                                   Point 03: <2.80, 500.00, 32.00>
+Number of points dominated: 2                                                     Number of points dominated: 2
+Point 04: <2.10, 750.00, 16.00>                                                   Point 04: <2.10, 750.00, 16.00>
+Number of points dominated: 2                                                     Number of points dominated: 2
+Point 02: <1.70, 1000.00, 16.00>                                                  Point 02: <1.70, 1000.00, 16.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+Point 07: <0.90, 900.00, 99.00>                                                   Point 07: <0.90, 900.00, 99.00>
+Number of points dominated: 0                                                     Number of points dominated: 0
+ 
+Your results seem to be CORRECT.  :)
+ 
+============================================
+Test for input file: test1.in
+6
+23 27.77 27.84 27.48 27.58 368
+24 27.69 28.23 27.49 27.89 210
+25 27.8 28.13 27.705 27.9 312
+26 28.06 28.07 27.51 27.83 453
+27 26.63 27.32 26.31 26.61 545
+28 26.41 26.47 25.95 26.31 357
+29 26.29 26.98 26.21 26.82 319
+30 27.17 27.47 26.92 27.22 288
+31 27.07 27.2 26.8905 27.1 158
+32 27.5 27.75 27.31 27.4 336
+33 27.38 27.54 27.36 27.47 286
+34 27.59 27.71 27.33 27.46 895
+35 27.41 27.53 27.15 27.29 422
+36 27.68 27.73 27.47 27.59 770
+37 27.49 27.665 27.4 27.62 227
+38 27.42 27.49 26.94 27.21 306
+39 27.34 27.55 27.07 27.4 203 
+ 
+Expected results:                                                                 Your results:
+Stage 1                                                                           Stage 1
+==========                                                                        ==========
+Point 01: <23.00, 27.77, 27.84, 27.48, 27.58, 368.00>                             Point 01: <23.00, 27.77, 27.84, 27.48, 27.58, 368.00>
+
+Stage 2                                                                           Stage 2
+==========                                                                        ==========
+Point 01, sum of coordinates (/100):  5.02 |------                                Point 01, sum of coordinates (/100):  5.02 |------
+Point 02, sum of coordinates (/100):  3.45 |----                                  Point 02, sum of coordinates (/100):  3.45 |----
+Point 03, sum of coordinates (/100):  4.49 |-----                                 Point 03, sum of coordinates (/100):  4.49 |-----
+Point 04, sum of coordinates (/100):  5.90 |------                                Point 04, sum of coordinates (/100):  5.90 |------
+Point 05, sum of coordinates (/100):  6.79 |-------                               Point 05, sum of coordinates (/100):  6.79 |-------
+Point 06, sum of coordinates (/100):  4.90 |-----                                 Point 06, sum of coordinates (/100):  4.90 |-----
+Point 07, sum of coordinates (/100):  4.54 |-----                                 Point 07, sum of coordinates (/100):  4.54 |-----
+Point 08, sum of coordinates (/100):  4.27 |-----                                 Point 08, sum of coordinates (/100):  4.27 |-----
+Point 09, sum of coordinates (/100):  2.97 |---                                   Point 09, sum of coordinates (/100):  2.97 |---
+Point 10, sum of coordinates (/100):  4.78 |-----                                 Point 10, sum of coordinates (/100):  4.78 |-----
+Point 11, sum of coordinates (/100):  4.29 |-----                                 Point 11, sum of coordinates (/100):  4.29 |-----
+Point 12, sum of coordinates (/100): 10.39 |---------+-                           Point 12, sum of coordinates (/100): 10.39 |---------+-
+Point 13, sum of coordinates (/100):  5.66 |------                                Point 13, sum of coordinates (/100):  5.66 |------
+Point 14, sum of coordinates (/100):  9.16 |---------+                            Point 14, sum of coordinates (/100):  9.16 |---------+
+Point 15, sum of coordinates (/100):  3.74 |----                                  Point 15, sum of coordinates (/100):  3.74 |----
+Point 16, sum of coordinates (/100):  4.53 |-----                                 Point 16, sum of coordinates (/100):  4.53 |-----
+Point 17, sum of coordinates (/100):  3.51 |----                                  Point 17, sum of coordinates (/100):  3.51 |----
+
+Stage 3                                                                           Stage 3
+==========                                                                        ==========
+Total: 17 points                                                                  Total: 17 points
+Point of largest sum of coordinates: 12                                           Point of largest sum of coordinates: 12
+Largest sum of coordinates: 1039.09                                               Largest sum of coordinates: 1039.09
+
+Stage 4                                                                           Stage 4
+==========                                                                        ==========
+Skyline points:                                                                   Skyline points:
+Point 02: <24.00, 27.69, 28.23, 27.49, 27.89, 210.00>                             Point 02: <24.00, 27.69, 28.23, 27.49, 27.89, 210.00>
+Point 03: <25.00, 27.80, 28.13, 27.70, 27.90, 312.00>                             Point 03: <25.00, 27.80, 28.13, 27.70, 27.90, 312.00>
+Point 04: <26.00, 28.06, 28.07, 27.51, 27.83, 453.00>                             Point 04: <26.00, 28.06, 28.07, 27.51, 27.83, 453.00>
+Point 10: <32.00, 27.50, 27.75, 27.31, 27.40, 336.00>                             Point 10: <32.00, 27.50, 27.75, 27.31, 27.40, 336.00>
+Point 12: <34.00, 27.59, 27.71, 27.33, 27.46, 895.00>                             Point 12: <34.00, 27.59, 27.71, 27.33, 27.46, 895.00>
+Point 14: <36.00, 27.68, 27.73, 27.47, 27.59, 770.00>                             Point 14: <36.00, 27.68, 27.73, 27.47, 27.59, 770.00>
+Point 15: <37.00, 27.49, 27.66, 27.40, 27.62, 227.00>                             Point 15: <37.00, 27.49, 27.66, 27.40, 27.62, 227.00>
+Point 16: <38.00, 27.42, 27.49, 26.94, 27.21, 306.00>                             Point 16: <38.00, 27.42, 27.49, 26.94, 27.21, 306.00>
+Point 17: <39.00, 27.34, 27.55, 27.07, 27.40, 203.00>                             Point 17: <39.00, 27.34, 27.55, 27.07, 27.40, 203.00>
+
+Stage 5                                                                           Stage 5
+==========                                                                        ==========
+Sorted skyline points:                                                            Sorted skyline points:
+Point 14: <36.00, 27.68, 27.73, 27.47, 27.59, 770.00>                             Point 14: <36.00, 27.68, 27.73, 27.47, 27.59, 770.00>
+Number of points dominated: 7                                                     Number of points dominated: 7
+Point 12: <34.00, 27.59, 27.71, 27.33, 27.46, 895.00>                             Point 12: <34.00, 27.59, 27.71, 27.33, 27.46, 895.00>
+Number of points dominated: 5                                                     Number of points dominated: 5
+Point 10: <32.00, 27.50, 27.75, 27.31, 27.40, 336.00>                             Point 10: <32.00, 27.50, 27.75, 27.31, 27.40, 336.00>
+Number of points dominated: 3                                                     Number of points dominated: 3
+Point 04: <26.00, 28.06, 28.07, 27.51, 27.83, 453.00>                             Point 04: <26.00, 28.06, 28.07, 27.51, 27.83, 453.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+Point 15: <37.00, 27.49, 27.66, 27.40, 27.62, 227.00>                             Point 15: <37.00, 27.49, 27.66, 27.40, 27.62, 227.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+Point 16: <38.00, 27.42, 27.49, 26.94, 27.21, 306.00>                             Point 16: <38.00, 27.42, 27.49, 26.94, 27.21, 306.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+Point 17: <39.00, 27.34, 27.55, 27.07, 27.40, 203.00>                             Point 17: <39.00, 27.34, 27.55, 27.07, 27.40, 203.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+Point 02: <24.00, 27.69, 28.23, 27.49, 27.89, 210.00>                             Point 02: <24.00, 27.69, 28.23, 27.49, 27.89, 210.00>
+Number of points dominated: 0                                                     Number of points dominated: 0
+Point 03: <25.00, 27.80, 28.13, 27.70, 27.90, 312.00>                             Point 03: <25.00, 27.80, 28.13, 27.70, 27.90, 312.00>
+Number of points dominated: 0                                                     Number of points dominated: 0
+ 
+Your results seem to be CORRECT.  :)
+ 
+============================================
+Test for input file: test2.in
+6
+631 54 93 856 255 156
+23 27.77 27.84 27.48 27.58 368
+24 27.69 28.23 27.49 27.89 210
+25 27.8 28.13 27.705 27.9 312
+26 28.06 28.07 27.51 27.83 453
+27 26.63 27.32 26.31 26.61 545
+28 26.41 26.47 25.95 26.31 357
+29 26.29 26.98 26.21 26.82 319
+30 27.17 27.47 26.92 27.22 288
+31 27.07 27.2 26.8905 27.1 158
+32 27.5 27.75 27.31 27.4 336
+33 27.38 27.54 27.36 27.47 286
+34 27.59 27.71 27.33 27.46 895
+35 27.41 27.53 27.15 27.29 422
+36 27.68 27.73 27.47 27.59 770
+37 27.49 27.665 27.4 27.62 227
+38 27.42 27.49 26.94 27.21 306
+39 27.34 27.55 27.07 27.4 203 
+ 
+Expected results:                                                                 Your results:
+Stage 1                                                                           Stage 1
+==========                                                                        ==========
+Point 01: <631.00, 54.00, 93.00, 856.00, 255.00, 156.00>                          Point 01: <631.00, 54.00, 93.00, 856.00, 255.00, 156.00>
+
+Stage 2                                                                           Stage 2
+==========                                                                        ==========
+Point 01, sum of coordinates (/100): 20.45 |---------+---------+-                 Point 01, sum of coordinates (/100): 20.45 |---------+---------+-
+Point 02, sum of coordinates (/100):  5.02 |------                                Point 02, sum of coordinates (/100):  5.02 |------
+Point 03, sum of coordinates (/100):  3.45 |----                                  Point 03, sum of coordinates (/100):  3.45 |----
+Point 04, sum of coordinates (/100):  4.49 |-----                                 Point 04, sum of coordinates (/100):  4.49 |-----
+Point 05, sum of coordinates (/100):  5.90 |------                                Point 05, sum of coordinates (/100):  5.90 |------
+Point 06, sum of coordinates (/100):  6.79 |-------                               Point 06, sum of coordinates (/100):  6.79 |-------
+Point 07, sum of coordinates (/100):  4.90 |-----                                 Point 07, sum of coordinates (/100):  4.90 |-----
+Point 08, sum of coordinates (/100):  4.54 |-----                                 Point 08, sum of coordinates (/100):  4.54 |-----
+Point 09, sum of coordinates (/100):  4.27 |-----                                 Point 09, sum of coordinates (/100):  4.27 |-----
+Point 10, sum of coordinates (/100):  2.97 |---                                   Point 10, sum of coordinates (/100):  2.97 |---
+Point 11, sum of coordinates (/100):  4.78 |-----                                 Point 11, sum of coordinates (/100):  4.78 |-----
+Point 12, sum of coordinates (/100):  4.29 |-----                                 Point 12, sum of coordinates (/100):  4.29 |-----
+Point 13, sum of coordinates (/100): 10.39 |---------+-                           Point 13, sum of coordinates (/100): 10.39 |---------+-
+Point 14, sum of coordinates (/100):  5.66 |------                                Point 14, sum of coordinates (/100):  5.66 |------
+Point 15, sum of coordinates (/100):  9.16 |---------+                            Point 15, sum of coordinates (/100):  9.16 |---------+
+Point 16, sum of coordinates (/100):  3.74 |----                                  Point 16, sum of coordinates (/100):  3.74 |----
+Point 17, sum of coordinates (/100):  4.53 |-----                                 Point 17, sum of coordinates (/100):  4.53 |-----
+Point 18, sum of coordinates (/100):  3.51 |----                                  Point 18, sum of coordinates (/100):  3.51 |----
+
+Stage 3                                                                           Stage 3
+==========                                                                        ==========
+Total: 18 points                                                                  Total: 18 points
+Point of largest sum of coordinates: 01                                           Point of largest sum of coordinates: 01
+Largest sum of coordinates: 2045.00                                               Largest sum of coordinates: 2045.00
+
+Stage 4                                                                           Stage 4
+==========                                                                        ==========
+Skyline points:                                                                   Skyline points:
+Point 01: <631.00, 54.00, 93.00, 856.00, 255.00, 156.00>                          Point 01: <631.00, 54.00, 93.00, 856.00, 255.00, 156.00>
+Point 03: <24.00, 27.69, 28.23, 27.49, 27.89, 210.00>                             Point 03: <24.00, 27.69, 28.23, 27.49, 27.89, 210.00>
+Point 04: <25.00, 27.80, 28.13, 27.70, 27.90, 312.00>                             Point 04: <25.00, 27.80, 28.13, 27.70, 27.90, 312.00>
+Point 05: <26.00, 28.06, 28.07, 27.51, 27.83, 453.00>                             Point 05: <26.00, 28.06, 28.07, 27.51, 27.83, 453.00>
+Point 11: <32.00, 27.50, 27.75, 27.31, 27.40, 336.00>                             Point 11: <32.00, 27.50, 27.75, 27.31, 27.40, 336.00>
+Point 13: <34.00, 27.59, 27.71, 27.33, 27.46, 895.00>                             Point 13: <34.00, 27.59, 27.71, 27.33, 27.46, 895.00>
+Point 15: <36.00, 27.68, 27.73, 27.47, 27.59, 770.00>                             Point 15: <36.00, 27.68, 27.73, 27.47, 27.59, 770.00>
+Point 16: <37.00, 27.49, 27.66, 27.40, 27.62, 227.00>                             Point 16: <37.00, 27.49, 27.66, 27.40, 27.62, 227.00>
+Point 17: <38.00, 27.42, 27.49, 26.94, 27.21, 306.00>                             Point 17: <38.00, 27.42, 27.49, 26.94, 27.21, 306.00>
+Point 18: <39.00, 27.34, 27.55, 27.07, 27.40, 203.00>                             Point 18: <39.00, 27.34, 27.55, 27.07, 27.40, 203.00>
+
+Stage 5                                                                           Stage 5
+==========                                                                        ==========
+Sorted skyline points:                                                            Sorted skyline points:
+Point 15: <36.00, 27.68, 27.73, 27.47, 27.59, 770.00>                             Point 15: <36.00, 27.68, 27.73, 27.47, 27.59, 770.00>
+Number of points dominated: 7                                                     Number of points dominated: 7
+Point 13: <34.00, 27.59, 27.71, 27.33, 27.46, 895.00>                             Point 13: <34.00, 27.59, 27.71, 27.33, 27.46, 895.00>
+Number of points dominated: 5                                                     Number of points dominated: 5
+Point 11: <32.00, 27.50, 27.75, 27.31, 27.40, 336.00>                             Point 11: <32.00, 27.50, 27.75, 27.31, 27.40, 336.00>
+Number of points dominated: 3                                                     Number of points dominated: 3
+Point 05: <26.00, 28.06, 28.07, 27.51, 27.83, 453.00>                             Point 05: <26.00, 28.06, 28.07, 27.51, 27.83, 453.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+Point 16: <37.00, 27.49, 27.66, 27.40, 27.62, 227.00>                             Point 16: <37.00, 27.49, 27.66, 27.40, 27.62, 227.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+Point 17: <38.00, 27.42, 27.49, 26.94, 27.21, 306.00>                             Point 17: <38.00, 27.42, 27.49, 26.94, 27.21, 306.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+Point 18: <39.00, 27.34, 27.55, 27.07, 27.40, 203.00>                             Point 18: <39.00, 27.34, 27.55, 27.07, 27.40, 203.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+Point 01: <631.00, 54.00, 93.00, 856.00, 255.00, 156.00>                          Point 01: <631.00, 54.00, 93.00, 856.00, 255.00, 156.00>
+Number of points dominated: 0                                                     Number of points dominated: 0
+Point 03: <24.00, 27.69, 28.23, 27.49, 27.89, 210.00>                             Point 03: <24.00, 27.69, 28.23, 27.49, 27.89, 210.00>
+Number of points dominated: 0                                                     Number of points dominated: 0
+Point 04: <25.00, 27.80, 28.13, 27.70, 27.90, 312.00>                             Point 04: <25.00, 27.80, 28.13, 27.70, 27.90, 312.00>
+Number of points dominated: 0                                                     Number of points dominated: 0
+ 
+Your results seem to be CORRECT.  :)
+ 
+ 
+============================================
+Test for input file: invis0.in
+8
+1 527 5 161 834 202 178 1
+1 6 2 46 91 23 35 1
+2 138 1 98 263 5 69 3
+3 295 54 164 438 124 79 4
+4 631 54 93 856 255 156 12
+5 13 1 15 22 5 4 3
+6 41 15 33 107 19 10 3
+7 108 14 50 229 46 30 1
+8 162 30 98 358 70 44 2
+9 713 37 196 1016 266 257 18
+10 567 60 115 870 223 193 12
+11 34 1 16 49 14 7 6 
+ 
+Expected results:                                                                 Your results:
+Stage 1                                                                           Stage 1
+==========                                                                        ==========
+Point 01: <1.00, 527.00, 5.00, 161.00, 834.00, 202.00, 178.00, 1.00>              Point 01: <1.00, 527.00, 5.00, 161.00, 834.00, 202.00, 178.00, 1.00>
+
+Stage 2                                                                           Stage 2
+==========                                                                        ==========
+Point 01, sum of coordinates (/100): 19.09 |---------+---------+                  Point 01, sum of coordinates (/100): 19.09 |---------+---------+
+Point 02, sum of coordinates (/100):  2.05 |---                                   Point 02, sum of coordinates (/100):  2.05 |---
+Point 03, sum of coordinates (/100):  5.79 |------                                Point 03, sum of coordinates (/100):  5.79 |------
+Point 04, sum of coordinates (/100): 11.61 |---------+--                          Point 04, sum of coordinates (/100): 11.61 |---------+--
+Point 05, sum of coordinates (/100): 20.61 |---------+---------+-                 Point 05, sum of coordinates (/100): 20.61 |---------+---------+-
+Point 06, sum of coordinates (/100):  0.68 |-                                     Point 06, sum of coordinates (/100):  0.68 |-
+Point 07, sum of coordinates (/100):  2.34 |---                                   Point 07, sum of coordinates (/100):  2.34 |---
+Point 08, sum of coordinates (/100):  4.85 |-----                                 Point 08, sum of coordinates (/100):  4.85 |-----
+Point 09, sum of coordinates (/100):  7.72 |--------                              Point 09, sum of coordinates (/100):  7.72 |--------
+Point 10, sum of coordinates (/100): 25.12 |---------+---------+------            Point 10, sum of coordinates (/100): 25.12 |---------+---------+------
+Point 11, sum of coordinates (/100): 20.50 |---------+---------+-                 Point 11, sum of coordinates (/100): 20.50 |---------+---------+-
+Point 12, sum of coordinates (/100):  1.38 |--                                    Point 12, sum of coordinates (/100):  1.38 |--
+
+Stage 3                                                                           Stage 3
+==========                                                                        ==========
+Total: 12 points                                                                  Total: 12 points
+Point of largest sum of coordinates: 10                                           Point of largest sum of coordinates: 10
+Largest sum of coordinates: 2512.00                                               Largest sum of coordinates: 2512.00
+
+Stage 4                                                                           Stage 4
+==========                                                                        ==========
+Skyline points:                                                                   Skyline points:
+Point 04: <3.00, 295.00, 54.00, 164.00, 438.00, 124.00, 79.00, 4.00>              Point 04: <3.00, 295.00, 54.00, 164.00, 438.00, 124.00, 79.00, 4.00>
+Point 05: <4.00, 631.00, 54.00, 93.00, 856.00, 255.00, 156.00, 12.00>             Point 05: <4.00, 631.00, 54.00, 93.00, 856.00, 255.00, 156.00, 12.00>
+Point 10: <9.00, 713.00, 37.00, 196.00, 1016.00, 266.00, 257.00, 18.00>           Point 10: <9.00, 713.00, 37.00, 196.00, 1016.00, 266.00, 257.00, 18.00>
+Point 11: <10.00, 567.00, 60.00, 115.00, 870.00, 223.00, 193.00, 12.00>           Point 11: <10.00, 567.00, 60.00, 115.00, 870.00, 223.00, 193.00, 12.00>
+Point 12: <11.00, 34.00, 1.00, 16.00, 49.00, 14.00, 7.00, 6.00>                   Point 12: <11.00, 34.00, 1.00, 16.00, 49.00, 14.00, 7.00, 6.00>
+
+Stage 5                                                                           Stage 5
+==========                                                                        ==========
+Sorted skyline points:                                                            Sorted skyline points:
+Point 10: <9.00, 713.00, 37.00, 196.00, 1016.00, 266.00, 257.00, 18.00>           Point 10: <9.00, 713.00, 37.00, 196.00, 1016.00, 266.00, 257.00, 18.00>
+Number of points dominated: 7                                                     Number of points dominated: 7
+Point 11: <10.00, 567.00, 60.00, 115.00, 870.00, 223.00, 193.00, 12.00>           Point 11: <10.00, 567.00, 60.00, 115.00, 870.00, 223.00, 193.00, 12.00>
+Number of points dominated: 6                                                     Number of points dominated: 6
+Point 04: <3.00, 295.00, 54.00, 164.00, 438.00, 124.00, 79.00, 4.00>              Point 04: <3.00, 295.00, 54.00, 164.00, 438.00, 124.00, 79.00, 4.00>
+Number of points dominated: 2                                                     Number of points dominated: 2
+Point 05: <4.00, 631.00, 54.00, 93.00, 856.00, 255.00, 156.00, 12.00>             Point 05: <4.00, 631.00, 54.00, 93.00, 856.00, 255.00, 156.00, 12.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+Point 12: <11.00, 34.00, 1.00, 16.00, 49.00, 14.00, 7.00, 6.00>                   Point 12: <11.00, 34.00, 1.00, 16.00, 49.00, 14.00, 7.00, 6.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+ 
+Your results seem to be CORRECT.  :)
+ 
+============================================
+Test for input file: invis1.in
+6
+24 27.69 28.23 27.49 27.89 2100
+25 27.8 28.13 27.705 27.9 3125
+29 26.29 26.98 26.21 26.82 3191
+30 27.17 27.47 26.92 27.22 2887
+31 27.07 27.2 26.8905 27.1 1589
+32 27.5 27.75 27.31 27.4 3365
+33 27.38 27.54 27.36 27.47 2862
+37 27.49 27.665 27.4 27.62 2276
+38 27.42 27.49 26.94 27.21 3066
+39 27.34 27.55 27.07 27.4 2036 
+ 
+Expected results:                                                                 Your results:
+Stage 1                                                                           Stage 1
+==========                                                                        ==========
+Point 01: <24.00, 27.69, 28.23, 27.49, 27.89, 2100.00>                            Point 01: <24.00, 27.69, 28.23, 27.49, 27.89, 2100.00>
+
+Stage 2                                                                           Stage 2
+==========                                                                        ==========
+Point 01, sum of coordinates (/100): 22.35 |---------+---------+---               Point 01, sum of coordinates (/100): 22.35 |---------+---------+---
+Point 02, sum of coordinates (/100): 32.62 |---------+---------+---------+---     Point 02, sum of coordinates (/100): 32.62 |---------+---------+---------+---
+Point 03, sum of coordinates (/100): 33.26 |---------+---------+---------+----    Point 03, sum of coordinates (/100): 33.26 |---------+---------+---------+----
+Point 04, sum of coordinates (/100): 30.26 |---------+---------+---------+-       Point 04, sum of coordinates (/100): 30.26 |---------+---------+---------+-
+Point 05, sum of coordinates (/100): 17.28 |---------+--------                    Point 05, sum of coordinates (/100): 17.28 |---------+--------
+Point 06, sum of coordinates (/100): 35.07 |---------+---------+---------+----    Point 06, sum of coordinates (/100): 35.07 |---------+---------+---------+----
+Point 07, sum of coordinates (/100): 30.05 |---------+---------+---------+-       Point 07, sum of coordinates (/100): 30.05 |---------+---------+---------+-
+Point 08, sum of coordinates (/100): 24.23 |---------+---------+-----             Point 08, sum of coordinates (/100): 24.23 |---------+---------+-----
+Point 09, sum of coordinates (/100): 32.13 |---------+---------+---------+---     Point 09, sum of coordinates (/100): 32.13 |---------+---------+---------+---
+Point 10, sum of coordinates (/100): 21.84 |---------+---------+--                Point 10, sum of coordinates (/100): 21.84 |---------+---------+--
+
+Stage 3                                                                           Stage 3
+==========                                                                        ==========
+Total: 10 points                                                                  Total: 10 points
+Point of largest sum of coordinates: 06                                           Point of largest sum of coordinates: 06
+Largest sum of coordinates: 3506.96                                               Largest sum of coordinates: 3506.96
+
+Stage 4                                                                           Stage 4
+==========                                                                        ==========
+Skyline points:                                                                   Skyline points:
+Point 01: <24.00, 27.69, 28.23, 27.49, 27.89, 2100.00>                            Point 01: <24.00, 27.69, 28.23, 27.49, 27.89, 2100.00>
+Point 02: <25.00, 27.80, 28.13, 27.70, 27.90, 3125.00>                            Point 02: <25.00, 27.80, 28.13, 27.70, 27.90, 3125.00>
+Point 06: <32.00, 27.50, 27.75, 27.31, 27.40, 3365.00>                            Point 06: <32.00, 27.50, 27.75, 27.31, 27.40, 3365.00>
+Point 07: <33.00, 27.38, 27.54, 27.36, 27.47, 2862.00>                            Point 07: <33.00, 27.38, 27.54, 27.36, 27.47, 2862.00>
+Point 08: <37.00, 27.49, 27.66, 27.40, 27.62, 2276.00>                            Point 08: <37.00, 27.49, 27.66, 27.40, 27.62, 2276.00>
+Point 09: <38.00, 27.42, 27.49, 26.94, 27.21, 3066.00>                            Point 09: <38.00, 27.42, 27.49, 26.94, 27.21, 3066.00>
+Point 10: <39.00, 27.34, 27.55, 27.07, 27.40, 2036.00>                            Point 10: <39.00, 27.34, 27.55, 27.07, 27.40, 2036.00>
+
+Stage 5                                                                           Stage 5
+==========                                                                        ==========
+Sorted skyline points:                                                            Sorted skyline points:
+Point 06: <32.00, 27.50, 27.75, 27.31, 27.40, 3365.00>                            Point 06: <32.00, 27.50, 27.75, 27.31, 27.40, 3365.00>
+Number of points dominated: 3                                                     Number of points dominated: 3
+Point 07: <33.00, 27.38, 27.54, 27.36, 27.47, 2862.00>                            Point 07: <33.00, 27.38, 27.54, 27.36, 27.47, 2862.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+Point 08: <37.00, 27.49, 27.66, 27.40, 27.62, 2276.00>                            Point 08: <37.00, 27.49, 27.66, 27.40, 27.62, 2276.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+Point 09: <38.00, 27.42, 27.49, 26.94, 27.21, 3066.00>                            Point 09: <38.00, 27.42, 27.49, 26.94, 27.21, 3066.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+Point 10: <39.00, 27.34, 27.55, 27.07, 27.40, 2036.00>                            Point 10: <39.00, 27.34, 27.55, 27.07, 27.40, 2036.00>
+Number of points dominated: 1                                                     Number of points dominated: 1
+Point 01: <24.00, 27.69, 28.23, 27.49, 27.89, 2100.00>                            Point 01: <24.00, 27.69, 28.23, 27.49, 27.89, 2100.00>
+Number of points dominated: 0                                                     Number of points dominated: 0
+Point 02: <25.00, 27.80, 28.13, 27.70, 27.90, 3125.00>                            Point 02: <25.00, 27.80, 28.13, 27.70, 27.90, 3125.00>
+Number of points dominated: 0                                                     Number of points dominated: 0
+ 
+Your results seem to be CORRECT.  :)
+ 
+============================================
+Test for input file: invis2.in
+1
+1 
+ 
+Expected results:                                                                 Your results:
+Stage 1                                                                           Stage 1
+==========                                                                        ==========
+Point 01: <1.00>                                                                  Point 01: <1.00>
+
+Stage 2                                                                           Stage 2
+==========                                                                        ==========
+Point 01, sum of coordinates (/100):  0.01 |-                                     Point 01, sum of coordinates (/100):  0.01 |-
+
+Stage 3                                                                           Stage 3
+==========                                                                        ==========
+Total: 1 points                                                                   Total: 1 points
+Point of largest sum of coordinates: 01                                           Point of largest sum of coordinates: 01
+Largest sum of coordinates: 1.00                                                  Largest sum of coordinates: 1.00
+
+Stage 4                                                                           Stage 4
+==========                                                                        ==========
+Skyline points:                                                                   Skyline points:
+Point 01: <1.00>                                                                  Point 01: <1.00>
+
+Stage 5                                                                           Stage 5
+==========                                                                        ==========
+Sorted skyline points:                                                            Sorted skyline points:
+Point 01: <1.00>                                                                  Point 01: <1.00>
+Number of points dominated: 0                                                     Number of points dominated: 0
+ 
+Your results seem to be CORRECT.  :)
+ 
+============================================
+Test for input file: invis3.in
+10
+1 1 1 1 1 1 1 1 1 1
+0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5
+0.49 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5
+0.5 0.49 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5
+0.5 0.5 0.49 0.5 0.5 0.5 0.5 0.5 0.5 0.5
+0.5 0.5 0.5 0.49 0.5 0.5 0.5 0.5 0.5 0.5
+0.5 0.5 0.5 0.5 0.49 0.5 0.5 0.5 0.5 0.5
+0.5 0.5 0.5 0.5 0.5 0.49 0.5 0.5 0.5 0.5
+0.5 0.5 0.5 0.5 0.5 0.5 0.49 0.5 0.5 0.5
+0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.49 0.5 0.5
+0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.49 0.5
+0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.49
+0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.48 0.5
+0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.48 0.5 0.5
+0.5 0.5 0.5 0.5 0.5 0.5 0.48 0.5 0.5 0.5
+0.5 0.5 0.5 0.5 0.5 0.48 0.5 0.5 0.5 0.5
+0.5 0.5 0.5 0.5 0.48 0.5 0.5 0.5 0.5 0.5
+0.5 0.5 0.5 0.48 0.5 0.5 0.5 0.5 0.5 0.5 
+ 
+Expected results:                                                                 Your results:
+Stage 1                                                                           Stage 1
+==========                                                                        ==========
+Point 01: <1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00>            Point 01: <1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00>
+
+Stage 2                                                                           Stage 2
+==========                                                                        ==========
+Point 01, sum of coordinates (/100):  0.10 |-                                     Point 01, sum of coordinates (/100):  0.10 |-
+Point 02, sum of coordinates (/100):  0.05 |-                                     Point 02, sum of coordinates (/100):  0.05 |-
+Point 03, sum of coordinates (/100):  0.05 |-                                     Point 03, sum of coordinates (/100):  0.05 |-
+Point 04, sum of coordinates (/100):  0.05 |-                                     Point 04, sum of coordinates (/100):  0.05 |-
+Point 05, sum of coordinates (/100):  0.05 |-                                     Point 05, sum of coordinates (/100):  0.05 |-
+Point 06, sum of coordinates (/100):  0.05 |-                                     Point 06, sum of coordinates (/100):  0.05 |-
+Point 07, sum of coordinates (/100):  0.05 |-                                     Point 07, sum of coordinates (/100):  0.05 |-
+Point 08, sum of coordinates (/100):  0.05 |-                                     Point 08, sum of coordinates (/100):  0.05 |-
+Point 09, sum of coordinates (/100):  0.05 |-                                     Point 09, sum of coordinates (/100):  0.05 |-
+Point 10, sum of coordinates (/100):  0.05 |-                                     Point 10, sum of coordinates (/100):  0.05 |-
+Point 11, sum of coordinates (/100):  0.05 |-                                     Point 11, sum of coordinates (/100):  0.05 |-
+Point 12, sum of coordinates (/100):  0.05 |-                                     Point 12, sum of coordinates (/100):  0.05 |-
+Point 13, sum of coordinates (/100):  0.05 |-                                     Point 13, sum of coordinates (/100):  0.05 |-
+Point 14, sum of coordinates (/100):  0.05 |-                                     Point 14, sum of coordinates (/100):  0.05 |-
+Point 15, sum of coordinates (/100):  0.05 |-                                     Point 15, sum of coordinates (/100):  0.05 |-
+Point 16, sum of coordinates (/100):  0.05 |-                                     Point 16, sum of coordinates (/100):  0.05 |-
+Point 17, sum of coordinates (/100):  0.05 |-                                     Point 17, sum of coordinates (/100):  0.05 |-
+Point 18, sum of coordinates (/100):  0.05 |-                                     Point 18, sum of coordinates (/100):  0.05 |-
+
+Stage 3                                                                           Stage 3
+==========                                                                        ==========
+Total: 18 points                                                                  Total: 18 points
+Point of largest sum of coordinates: 01                                           Point of largest sum of coordinates: 01
+Largest sum of coordinates: 10.00                                                 Largest sum of coordinates: 10.00
+
+Stage 4                                                                           Stage 4
+==========                                                                        ==========
+Skyline points:                                                                   Skyline points:
+Point 01: <1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00>            Point 01: <1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00>
+
+Stage 5                                                                           Stage 5
+==========                                                                        ==========
+Sorted skyline points:                                                            Sorted skyline points:
+Point 01: <1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00>            Point 01: <1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00>
+Number of points dominated: 17                                                    Number of points dominated: 17
+ 
+Your results seem to be CORRECT.  :)
+ 

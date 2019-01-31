@@ -5,7 +5,7 @@ The skeleton code file contains a main function that has been completed already.
 
 ## Result
 
-14.5/15 :thumbsup:
+14.5/15 :thumbsup: Preview Results: [Click here](http://htmlpreview.github.com/?https://github.com/jeremytee97/COMP10002-SkylinePoints/blob/master/feedback.html)
 
 Overall comments from marker:
  > Outputs were perfect! :) However there are some style/structure issues that would be good to address. Most importantly, more functions! But great job overall.
